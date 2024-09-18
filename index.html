@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="copyNotification">Password copied!</div>
     <div class="container">
-        <h1>Generate a<br>Random password</h1>
+        <h1>Generate a<br><span>Random password</span></h1>
         <div class="display">
-            <input type="text" id="password" placeholder="password">
-            <img src="/copy.png">
-            
+            <input type="text" id="password" placeholder="Password">
+            <img src="/copy.png"  onclick = "copyPassword()">
         </div>
-
+        <button onclick="CreatePassword()"><img src="/bolt.png" alt="">Generate password</button>
     </div>
     <script src="/passgenerator.js"></script>
 </body>
